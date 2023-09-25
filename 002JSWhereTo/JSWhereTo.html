@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML content with in-tag javascript</p>
+
+<p id="demo">Original HTML content 1.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Changed HTML content 1"'>Click here to change the above content!</button>
+
+<p>JavaScript can change HTML content with a function called in a tag</p>
+
+<p id="demo1">Original HTML content 2.</p>
+
+
+<button type="button" onclick="myFunction1()">Click here to change HTML content 2!</button>
+
+<script>
+function myFunction1() {
+  document.getElementById("demo1").innerHTML = "Changed HMTL Content 2";
+}
+</script>
+
+<p>JavaScript can change HTML content with a function in an external js file</p>
+
+<p id="demo2">Original HTML content 3.</p>
+
+<script src="JSWhereTo.js"></script>
+
+<button type="button" onclick="myFunction2()">Click here to change HTML content 3!</button>
+
+
+</body>
+</html> 
